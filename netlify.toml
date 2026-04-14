@@ -2,10 +2,12 @@
   publish = "."
   functions = "netlify/functions"
 
+
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
+from = "/api/claude"
+to = "/.netlify/functions/claude"
+status = 200
+
 
 [[headers]]
   for = "/*"
