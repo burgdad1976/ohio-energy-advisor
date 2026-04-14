@@ -43,20 +43,23 @@
     </div>
 
     <!-- ✅ FIXED FILE INPUT (THIS IS THE IMPORTANT PART) -->
-    <input
-      type="file"
-      id="bill-file"
-      accept="image/*"
-      tabindex="-1"
-      style="
-        position:absolute;
-        left:-9999px;
-        width:1px;
-        height:1px;
-        opacity:0;
-      "
-      onchange="handleFile(this.files[0])"
-    />
+   
+<input
+  type="file"
+  id="bill-file"
+  accept="image/*"
+  tabindex="-1"
+  style="
+    position:absolute;
+    width:1px;
+    height:1px;
+    opacity:0;
+    pointer-events:none;
+  "
+  onchange="handleFile(this.files[0])"
+/>
+``
+
 
     <div class="divider"><span>or describe your charges</span></div>
 
